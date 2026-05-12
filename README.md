@@ -385,7 +385,7 @@ This project is open source. Feel free to use, modify, and distribute.
 
 ## Related Articles
 
-- **Medium Post:** [Building an Embedded Code Executor: Why Monaco Alone Isn't Enough](link-to-medium-post)
+- **Medium Post:** [Building an Embedded Code Executor: Why Monaco Alone Isn't Enough](https://medium.com/@mylapuramakshaikumar/building-an-embedded-code-executor-why-monaco-alone-isnt-enough-5ec0991d94ff?postPublishedType=initial)
 - **GitHub Discussions:** [Ask questions and share ideas](https://github.com/Akshai-M/monaco-docker-ide/discussions)
 
 ---
