@@ -20,37 +20,37 @@ Write code in a beautiful Monaco Editor, hit "Run," and your code executes insid
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ### Three-Layer Design
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│ Frontend Layer (Next.js + React)                             │
-│ • Monaco Editor for code editing                             │
-│ • Language selection dropdown                                │
-│ • Optional database credential config                        │
-│ • Real-time output display                                   │
+│ Frontend Layer (Next.js + React)                            │
+│ • Monaco Editor for code editing                            │
+│ • Language selection dropdown                               │
+│ • Optional database credential config                       │
+│ • Real-time output display                                  │
 └────────────────┬────────────────────────────────────────────┘
                  │ axios POST /api/execute
                  ↓
 ┌─────────────────────────────────────────────────────────────┐
-│ API Layer (Next.js Route Handler)                            │
-│ • Receives code + language selection                         │
-│ • Parses imports via regex to detect dependencies            │
-│ • Writes code to temp file with UUID                         │
-│ • Selects appropriate Docker image                           │
-│ • Executes container and captures output                     │
+│ API Layer (Next.js Route Handler)                           │
+│ • Receives code + language selection                        │
+│ • Parses imports via regex to detect dependencies           │
+│ • Writes code to temp file with UUID                        │
+│ • Selects appropriate Docker image                          │
+│ • Executes container and captures output                    │
 └────────────────┬────────────────────────────────────────────┘
                  │ docker run --rm -v tempDir:/work
                  ↓
 ┌─────────────────────────────────────────────────────────────┐
-│ Execution Layer (Docker Container)                           │
-│ • Volume-mounted temp directory                              │
-│ • Auto-installs detected pip packages                        │
-│ • Executes script                                            │
-│ • Captures stdout + stderr                                   │
-│ • Container exits and is removed                             │
+│ Execution Layer (Docker Container)                          │
+│ • Volume-mounted temp directory                             │
+│ • Auto-installs detected pip packages                       │
+│ • Executes script                                           │
+│ • Captures stdout + stderr                                  │
+│ • Container exits and is removed                            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -78,7 +78,7 @@ Display in Output Panel
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Framework:** Next.js 15.3
@@ -105,7 +105,7 @@ Display in Output Panel
 
 ---
 
-## 📦 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 - Node.js 18+ 
@@ -147,7 +147,7 @@ npm run start
 
 ---
 
-## 🎯 How to Use
+## How to Use
 
 ### Basic Workflow
 
@@ -246,7 +246,7 @@ exec(dockerCommand, { maxBuffer: 1024 * 500 }, (error, stdout, stderr) => {
 
 ---
 
-## 🛡️ Security & Isolation
+## Security & Isolation
 
 ### How Code Is Isolated
 
@@ -273,7 +273,7 @@ exec(dockerCommand, { maxBuffer: 1024 * 500 }, (error, stdout, stderr) => {
 
 ---
 
-## 🚧 Known Issues & Limitations
+## Known Issues & Limitations
 
 | Issue | Severity | Workaround |
 |-------|----------|-----------|
@@ -325,7 +325,7 @@ Since Docker execution requires a host machine:
 
 ---
 
-## 🔮 Roadmap & Future Enhancements
+## Roadmap & Future Enhancements
 
 ### Short Term
 - [ ] Integrate database connections (Databricks, Snowflake, Redshift)
@@ -370,7 +370,7 @@ Contributions welcome! Areas needing help:
 
 ---
 
-## 📖 Learning Resources
+## Learning Resources
 
 - [Monaco Editor Docs](https://microsoft.github.io/monaco-editor/)
 - [Next.js API Routes](https://nextjs.org/docs/api-routes/introduction)
@@ -379,20 +379,20 @@ Contributions welcome! Areas needing help:
 
 ---
 
-## 📝 License
+## License
 
 This project is open source. Feel free to use, modify, and distribute.
 
 ---
 
-## 🎓 Related Articles
+## Related Articles
 
 - **Medium Post:** [Building an Embedded Code Executor: Why Monaco Alone Isn't Enough](link-to-medium-post)
 - **GitHub Discussions:** [Ask questions and share ideas](https://github.com/Akshai-M/monaco-docker-ide/discussions)
 
 ---
 
-## 📞 Support & Questions
+## Support & Questions
 
 - **GitHub Issues:** [Report bugs](https://github.com/Akshai-M/monaco-docker-ide/issues)
 - **Discussions:** [Ask questions](https://github.com/Akshai-M/monaco-docker-ide/discussions)
@@ -400,13 +400,11 @@ This project is open source. Feel free to use, modify, and distribute.
 
 ---
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Monaco Editor team for the fantastic editor component
 - Next.js team for the excellent framework
 - Docker for containerization
 - All contributors and users providing feedback
 
----
-
-**Made with ❤️ by [Akshai-M](https://github.com/Akshai-M)**
+  
