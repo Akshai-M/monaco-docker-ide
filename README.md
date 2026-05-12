@@ -2,8 +2,6 @@
 
 A web-based code executor that combines Monaco Editor with Docker containerization to safely run Python, PySpark, Databricks, and SQL code with automatic dependency installation.
 
-**Live Demo:** [https://monaco-docker-ide.vercel.app](https://monaco-docker-ide.vercel.app)
-
 ---
 
 ## 🚀 What This Does
